@@ -1,0 +1,5 @@
+{
+  "name": "test-api",
+  "port": 8080,
+  "prefixApi": "/api"
+}

@@ -1,0 +1,12 @@
+/* TEXTS */
+.g-text-1 {
+  font-weight: 300;
+  font-family: var(--font-normal);
+  font-size: calc(var(--font-unit) * 4.5); /* 18 */
+  line-height: calc(var(--font-unit) * 5.5); /* 22 */
+
+  @media (--large-min-viewport) {
+    font-size: calc(var(--font-unit) * 5); /* 20 */
+    line-height: calc(var(--font-unit) * 6); /* 24 */
+  }
+}

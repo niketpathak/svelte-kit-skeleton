@@ -1,0 +1,50 @@
+# OS specific
+.DS_Store
+Thumbs.db
+.Trashes
+*~
+
+# IDE preference specific
+.idea
+.vscode
+
+# libs
+node_modules
+
+# logs
+*.log
+
+# Built assets
+__sapper__
+.svelte-kit
+dist
+!client/static/dist
+./public
+# may contain the storybook generated files
+/recipe
+# ignore only this one, because it contains the storybook generated files
+/doc/storybook
+
+# ignore env
+client/.env
+client/src/config.json
+www/src/config.json
+
+# ignore generated (comment to change temporarily)
+client/src/assets/styles/*.json
+client/src/assets/styles/global.css
+
+# other
+www/server
+screenshots
+
+# storybook
+public
+
+# reports
+.nyc_output/
+www/coverage
+client/coverage
+
+# history
+.history

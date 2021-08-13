@@ -1,0 +1,18 @@
+{
+  "pages": {
+    "home": {
+      "title": "My test Website",
+      "meta": {
+        "title": "Test Website | This is the title",
+        "description": "This is some meta description"
+      },
+      "link": {
+        "marvel": "Females from the Marvel Universe"
+      }
+    }
+  },
+  "components": {},
+  "common": {
+    "siteName": "An example website"
+  }
+}

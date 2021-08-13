@@ -1,0 +1,18 @@
+User-Agent: *
+Sitemap: https://www.example.com/sitemap.xml
+
+# Homepage
+Disallow: /*
+Allow: /$
+
+# Ressources
+Allow: *.svg
+Allow: *.png
+Allow: *.webp
+Allow: *.jpg
+Allow: *.xml
+Allow: /client/*.js$
+Allow: /client/*.js?
+Allow: /dist/*.ttf
+Allow: /dist/*.woff
+Allow: /dist/*.woff2

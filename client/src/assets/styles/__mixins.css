@@ -1,0 +1,32 @@
+@define-mixin truncate $line {
+  display: -webkit-inline-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+@define-mixin buttonSizeL {
+  --size: 64px;
+  --iconSize: 24px;
+
+  font-size: calc(var(--font-unit) * 4); /* 16px */
+  padding: 0 var(--space3);
+}
+
+@define-mixin buttonSizeM {
+  --size: 48px;
+  --iconSize: 20px;
+
+  font-size: calc(var(--font-unit) * 3.5); /* 14px */
+  padding: 0 var(--space2);
+}
+
+@define-mixin buttonSizeS {
+  --size: 32px;
+  --iconSize: 16px;
+
+  font-size: calc(var(--font-unit) * 3); /* 12px */
+  padding: 0 var(--space);
+}

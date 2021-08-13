@@ -1,0 +1,71 @@
+{
+  "name": "example-client",
+  "description": "A basic client using sveltekit",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "rm -rf .svelte-kit node_modules/.vite && svelte-kit dev",
+    "build": "npm run generate-station-config && npm run generate:css-json && svelte-kit build",
+    "preview": "svelte-kit preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --write --plugin-search-dir=. .",
+    "generate:css-json": "postcss src/assets/styles/__global.css -o src/assets/styles/global.css",
+    "postinstall": "rm -rf ./.svelte-kit && rm -rf ./node_modules/.vite"
+  },
+  "lint-staged": {
+    "*.{js,ts,svelte}": [
+      "eslint"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.14.9",
+    "@babel/preset-typescript": "^7.14.5",
+    "@sveltejs/adapter-node": "^1.0.0-next.35",
+    "@sveltejs/kit": "next",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/svelte": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "autoprefixer": "^10.3.1",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-transform-vite-meta-env": "^1.0.3",
+    "cssnano": "^5.0.6",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-svelte3": "^3.2.0",
+    "jest-environment-jsdom-fourteen": "^1.0.1",
+    "postcss-cli": "^8.3.1",
+    "postcss-custom-media": "^8.0.0",
+    "postcss-custom-properties": "^11.0.0",
+    "postcss-global-nested": "^1.2.0",
+    "postcss-import": "^14.0.2",
+    "postcss-mixins": "^8.1.0",
+    "postcss-nested": "^5.0.5",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "~2.2.1",
+    "prettier-plugin-svelte": "^2.2.0",
+    "svelte": "^3.34.0",
+    "svelte-check": "^2.0.0",
+    "svelte-jester": "^1.7.0",
+    "svelte-preprocess": "^4.0.0",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=14.17"
+  },
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "js-cookie": "^2.2.1",
+    "jwt-decode": "^3.1.2",
+    "postcss": "^8.3.5",
+    "svelte-i18n": "^3.3.9",
+    "url-join": "^4.0.1",
+    "uuid": "^8.3.2",
+    "yup": "^0.32.9"
+  }
+}

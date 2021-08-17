@@ -23,6 +23,8 @@
   import { onMount } from 'svelte';
   import Meta from 'components/Meta/Meta.svelte';
   import Button from 'components/Button/Button.svelte';
+  import Cyclic from 'components/Cyclic/Cyclic.svelte';
+  import Link from 'components/Link/Link.svelte';
   import { referrer } from 'stores/referrer';
 
   export let metadata;
@@ -61,5 +63,22 @@
   </ul>
 
   <Button buttonText="Example Button" />
+
+  <div class="home-link">
+    <Link href="#">
+      <Cyclic title="Example title">
+        <Link href="/">
+          Home
+        </Link>
+      </Cyclic>
+    </Link>
+  </div>
+
 </div>
 
+<style>
+  .home-link {
+    margin: 15px;
+    padding: 0px 30px;
+  }
+</style>
